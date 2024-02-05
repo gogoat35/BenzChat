@@ -42,7 +42,7 @@ const firebaseConfig = {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'MemeChat 2.0'
+      title.textContent = 'Benz Chat'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
