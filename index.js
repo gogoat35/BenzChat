@@ -1,6 +1,18 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
+  
+const firebaseConfig = {
+  apiKey: "AIzaSyBgazCRT41QO1yuts-y4Ynktr4vee5eljY",
+  authDomain: "benzchat1.firebaseapp.com",
+  projectId: "benzchat1",
+  storageBucket: "benzchat1.appspot.com",
+  messagingSenderId: "901057224109",
+  appId: "1:901057224109:web:573a6380df4db801745524",
+  measurementId: "G-Z70H3F6HT8"
+};
+
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
@@ -59,7 +71,7 @@ window.onload = function() {
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
-      join_input.placeholder = 'No.... It\'s Patrick Star'
+      join_input.placeholder = 'Type In A Name'
       // Every time we type into the join_input
       join_input.onkeyup  = function(){
         // If the input we have is longer that 0 letters
